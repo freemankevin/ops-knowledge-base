@@ -1,9 +1,10 @@
 # Ops Knowledge Base
 
-## 项目介绍
+![运维知识库](https://img.shields.io/badge/运维知识库-v1.0.0-blue?style=for-the-badge)
+[![GitHub](https://img.shields.io/github/license/freemankevin/ops-knowledge-base?style=for-the-badge)](https://github.com/freemankevin/ops-knowledge-base)
+[![MkDocs](https://img.shields.io/badge/MkDocs-Material-526CFE?style=for-the-badge&logo=MaterialForMkDocs)](https://squidfunk.github.io/mkdocs-material/)
 
 ops-knowledge-base 是一个基于 MkDocs 构建的文档项目，用于收集和分享运维相关的知识、经验和工具。
-
 
 ## 🚀 快速开始
 
