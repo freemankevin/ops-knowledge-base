@@ -1,6 +1,8 @@
-# Ops Knowledge Base
+# Ops-Knowledge-Base
 
 ![运维知识库](https://img.shields.io/badge/运维知识库-v1.0.0-blue?style=for-the-badge)
+[![Docker Hub](https://img.shields.io/badge/Docker-freelabspace/ops--knowledge--base-0db7ed?style=for-the-badge&logo=docker)](https://hub.docker.com/r/freelabspace/ops-knowledge-base)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Deployed-6cc644?style=for-the-badge&logo=GitHub)](https://freemankevin.github.io/ops-knowledge-base)
 [![GitHub](https://img.shields.io/github/license/freemankevin/ops-knowledge-base?style=for-the-badge)](https://github.com/freemankevin/ops-knowledge-base)
 [![MkDocs](https://img.shields.io/badge/MkDocs-Material-526CFE?style=for-the-badge&logo=MaterialForMkDocs)](https://squidfunk.github.io/mkdocs-material/)
 
