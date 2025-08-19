@@ -182,7 +182,7 @@ deploy_site() {
     fi
     
     # 使用 mkdocs gh-deploy 部署
-    mkdocs gh-deploy --clean --message "Deploy {sha} with MkDocs version {version}"
+    mkdocs gh-deploy --force
     log_success "部署完成！"
     log_info "访问地址: $DOCS_URL"
 }
