@@ -1,0 +1,206 @@
+# 网站信息
+site_name: 运维知识库
+site_description: 运维操作手册和故障解决方案
+site_author: freemankevin
+site_url: https://freemankevin.github.io/ops-knowledge-base
+
+# 仓库信息
+repo_name: ops-knowledge-base
+repo_url: https://github.com/freemankevin/ops-knowledge-base
+edit_uri: -/blob/main/docs/
+
+# 版权信息（页面底部显示）
+copyright: Copyright &copy; 2016 - 2025 freemankevin<br>Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a>
+
+# 主题配置
+theme:
+  name: material
+  language: zh
+  favicon: assets/images/favicon.ico
+
+  # 调色板 - 美化配色方案
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+
+  # 字体 - 优化字体组合
+  font:
+    text: Noto Serif SC, serif, 'PingFang SC', 'Microsoft YaHei', sans-serif
+    code: Source Code Pro, DM Mono, Noto Serif SC, consolas, Menlo, 'PingFang SC', 'Microsoft YaHei'
+
+  # 功能特性 - 增强功能
+  features:
+    - announce.dismiss          # 公告关闭
+    - content.action.edit       # 编辑操作
+    - content.action.view       # 查看操作
+    - content.code.annotate     # 代码注释
+    - content.code.copy         # 代码复制按钮
+    - content.code.select       # 代码选择
+    - content.footnote.tooltips # 脚注工具提示
+    - content.tabs.link         # 内容标签页链接
+    - content.tooltips          # 工具提示
+    - header.autohide          # 自动隐藏头部
+    - navigation.expand        # 默认展开侧边栏
+    - navigation.footer        # 导航页脚
+    - navigation.indexes       # 索引页面
+    - navigation.instant       # 即时加载
+    - navigation.instant.prefetch # 预加载
+    - navigation.instant.progress # 进度条
+    - navigation.sections      # 侧边栏分组
+    - navigation.tabs          # 顶部标签页
+    - navigation.tabs.sticky   # 粘性标签页
+    - navigation.top           # 回到顶部按钮
+    - navigation.tracking      # 锚点跟踪
+    - search.highlight         # 搜索高亮
+    - search.share            # 搜索分享
+    - search.suggest          # 搜索建议
+    - toc.follow              # 目录跟随
+    - toc.integrate           # 目录集成
+
+  # 图标 - GitLab主题图标
+  icon:
+    logo: material/hammer-wrench
+    repo: fontawesome/brands/git-alt
+    edit: material/pencil
+    view: material/eye
+
+# 插件
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      lang:
+        - zh
+        - en
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+      timezone: Asia/Shanghai
+      locale: zh
+      enable_git_follow: false  # 修复git跟踪警告
+  - awesome-pages # 页面导航优化
+  - mermaid2  # 流程图支持
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+  - include-markdown
+
+# 标签配置
+tags:
+  - 系统安装
+  - Linux
+  - CentOS
+  - Ubuntu
+  - Debian
+  - 运维
+  - 知识库
+
+# Markdown 扩展
+markdown_extensions:
+  - abbr                        # 缩写
+  - admonition                  # 提示框
+  - attr_list                   # 属性列表
+  - def_list                    # 定义列表
+  - footnotes                   # 脚注
+  - md_in_html                  # HTML中的Markdown
+  - toc:
+      permalink: true
+      title: 目录
+      permalink_title: 锚链接到此部分
+  - pymdownx.arithmatex:        # 数学公式
+      generic: true
+  - pymdownx.betterem:          # 更好的强调
+      smart_enable: all
+  - pymdownx.caret              # 上标
+  - pymdownx.details            # 折叠内容
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:         # 代码高亮
+      anchor_linenums: true
+      auto_title: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite       # 行内代码高亮
+  - pymdownx.keys               # 键盘按键
+  - pymdownx.magiclink:         # 魔术链接
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+  - pymdownx.mark               # 标记
+  - pymdownx.smartsymbols       # 智能符号
+  - pymdownx.superfences:       # 超级围栏
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:            # 标签页
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:          # 任务列表
+      custom_checkbox: true
+  - pymdownx.tilde              # 删除线
+
+# 导航结构
+nav:
+  # - !include nav.yml
+  - 首页:
+      - index.md
+      - 快速开始: quick-start.md
+      - 更新日志: changelog.md
+  - 基础环境:
+      - 01-基础环境/index.md
+      - 系统配置: 01-基础环境/系统配置.md
+      - 网络配置: 01-基础环境/网络配置.md
+      - 系统安装: 01-基础环境/系统安装.md
+  - 容器化:
+      - 02-容器化/index.md  
+      - Docker部署: 02-容器化/docker部署.md
+      - Compose配置: 02-容器化/compose配置.md
+  - 应用服务:
+      - 03-应用服务/index.md
+  - 数据存储:
+      - 04-数据存储/index.md
+  - 监控告警:
+      - 05-监控告警/index.md
+  - 安全防护:
+      - 06-安全防护/index.md
+  - 故障处理:
+      - 07-故障处理/index.md
+      - 常见问题: 07-故障处理/常见问题.md
+      - 应急流程: 07-故障处理/应急流程.md
+  - 最佳实践:
+      - 08-最佳实践/index.md
+      - 性能优化: 08-最佳实践/性能优化.md
+  - 关于:
+      - 联系方式: about/contacts.md
+  - 标签: tags.md
+  - 博客: blog/index.md
+
+# 额外配置
+extra:
+  # 社交链接（右上角图标）
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/freemankevin/ops-knowledge-base
+      name: GitHub 仓库
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/freelabspace/ops-knowledge-base/
+      name: Docker 镜像
+
+  # 生成器标识
+  generator: false
+
+extra_css:
+  - assets/stylesheets/fonts.css
