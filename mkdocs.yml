@@ -90,13 +90,6 @@ plugins:
       locale: zh
       enable_git_follow: false  # 修复git跟踪警告
       fallback_to_build_date: false  # 修复构建日期问题
-  - git-authors: # 作者信息
-      enabled: true
-      cache: true
-      cache_path: .cache/git-authors
-      template: >
-        <a href="{author.url}" target="_blank" rel="noopener">{author.name}</a>
-        <small>{author.date}</small>
   - awesome-pages # 页面导航优化
   - mermaid2  # 流程图支持
   - minify:
@@ -206,19 +199,6 @@ extra:
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/r/freelabspace/ops-knowledge-base/
       name: Docker 镜像
-  feedback:
-    title: Was this page helpful?
-    ratings:
-      - icon: material/emoticon-happy-outline
-        name: This page was helpful
-        data: 1
-        note: >-
-          Thanks for your feedback!
-      - icon: material/emoticon-sad-outline
-        name: This page could be improved
-        data: 0
-        note: >-
-          Thanks for your feedback, we’ll work on improving this page.
           
   # 生成器标识
   generator: false
