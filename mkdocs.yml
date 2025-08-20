@@ -197,7 +197,7 @@ extra:
       link: https://github.com/freemankevin/ops-knowledge-base
       name: GitHub 仓库
     - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/freelabspace/ops-knowledge-base/
+      link: https://hub.docker.com/r/freelabspace/ops-knowledge-base/tags
       name: Docker 镜像
           
   # 生成器标识
