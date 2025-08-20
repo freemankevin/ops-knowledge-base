@@ -10,7 +10,7 @@ repo_url: https://github.com/freemankevin/ops-knowledge-base
 edit_uri: -/blob/main/docs/
 
 # 版权信息（页面底部显示）
-copyright: Copyright &copy; 2016 - 2025 freemankevin<br>Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a>
+copyright: Copyright &copy; 2021 - 2025 freemankevin<br>Made with <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">Material for MkDocs</a>
 
 # 主题配置
 theme:
@@ -69,10 +69,10 @@ theme:
     - toc.follow              # 目录跟随
     - toc.integrate           # 目录集成
 
-  # 图标 - GitLab主题图标
+  # 图标 
   icon:
     logo: material/hammer-wrench
-    repo: fontawesome/brands/git-alt
+    repo: fontawesome/brands/github-alt
     edit: material/pencil
     view: material/eye
 
@@ -162,9 +162,8 @@ nav:
       - 更新日志: changelog.md
   - 基础环境:
       - 01-基础环境/index.md
-      - 系统配置: 01-基础环境/系统配置.md
-      - 网络配置: 01-基础环境/网络配置.md
       - 系统安装: 01-基础环境/系统安装.md
+      - 系统初始化: 01-基础环境/系统初始化.md
   - 容器化:
       - 02-容器化/index.md  
       - Docker部署: 02-容器化/docker部署.md
