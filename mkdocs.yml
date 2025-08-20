@@ -90,7 +90,13 @@ plugins:
       locale: zh
       enable_git_follow: false  # 修复git跟踪警告
       fallback_to_build_date: false  # 修复构建日期问题
-  - git-authors
+  - git-authors: # 作者信息
+      enabled: true
+      cache: true
+      cache_path: .cache/git-authors
+      template: >
+        <a href="{author.url}" target="_blank" rel="noopener">{author.name}</a>
+        <small>{author.date}</small>
   - awesome-pages # 页面导航优化
   - mermaid2  # 流程图支持
   - minify:
