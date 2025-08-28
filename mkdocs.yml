@@ -168,9 +168,10 @@ nav:
   - 容器化:
       - 02-容器化/index.md  
       - Docker部署: 02-容器化/docker部署.md
-      - Compose配置: 02-容器化/compose配置.md
+      - Compose部署: 02-容器化/compose部署.md
   - 应用服务:
       - 03-应用服务/index.md
+      - 中间件应用: 03-应用服务/中间件应用.md
   - 数据存储:
       - 04-数据存储/index.md
   - 监控告警:
