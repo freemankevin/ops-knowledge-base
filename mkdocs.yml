@@ -72,7 +72,7 @@ theme:
 
   # 图标 
   icon:
-    logo: material/hammer-wrench
+    logo: material/bookshelf
     repo: fontawesome/brands/github-alt
     edit: material/pencil
     view: material/eye
@@ -171,13 +171,19 @@ nav:
       - Compose部署: 02-容器化/compose部署.md
   - 应用服务:
       - 03-应用服务/index.md
-      - 中间件应用: 03-应用服务/中间件应用.md
+      - 中间件数据库: 03-应用服务/中间件数据库.md
+      - JAVA后端: 03-应用服务/JAVA后端.md
   - 数据存储:
       - 04-数据存储/index.md
   - 监控告警:
       - 05-监控告警/index.md
   - 安全防护:
       - 06-安全防护/index.md
+      - 系统加固: 06-安全防护/系统加固.md
+      - SSH安全: 06-安全防护/SSH安全.md 
+      - 防火墙: 06-安全防护/防火墙防护.md
+      - 网络安全: 06-安全防护/网络安全.md
+      - 容器安全: 06-安全防护/容器安全.md
   - 故障处理:
       - 07-故障处理/index.md
       - 常见问题: 07-故障处理/常见问题.md
